@@ -13,8 +13,8 @@ const addOne = (arr) => {
   // Solution code here...
   let numbers= [];
 
-  arr.forEach(element => {
-    numbers.push(element);
+  arr.forEach(number => {
+    numbers.push(number + 1);
   });
 
   return numbers;
@@ -72,18 +72,20 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 
 const greeting = (word) => {
   // Solution code here...
-  return word.toUpperCase();
+  return word.toUpperCase()+"!";
+  
+  
 };
 
 const speaker = (words, callback) => {
   // Solution code here...
-  let strings = [];
-  words.forEach(element => {
-      
-    strings.push(element);
-  });
+  let newArry=[];
+  words.forEach(item =>{
+      newArry.push(callback(item));
+     
+    });
 
-  return strings;
+     return newArry;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -104,10 +106,15 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+    for (let i = 0;i < times;i++) {
+      callback(arr, num);
+    }
+    return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -130,6 +137,15 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   // Solution code here...
+  let list = [];
+  availableItems.map( item => {
+     if(item.available == true)
+     {
+         list.push(item.name);
+     }
+     
+  });
+  return list;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -148,6 +164,22 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  let outputArray = [];
+  arr.forEach(number =>{
+   if (number%3 == 0 && number%5 == 0)
+   {
+    outputArray.push("Fizz Buzz");
+   
+   } else if (number%3 == 0){
+    outputArray.push("Fizz");
+    } else if (number%5 == 0){
+    outputArray.push("Buzz");
+    } else {
+     outputArray.push(number);
+    }
+  });
+  return outputArray;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
