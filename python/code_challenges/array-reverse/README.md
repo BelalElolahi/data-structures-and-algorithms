@@ -5,6 +5,6 @@
 ## Implemntation
 define a functions that take a an array and define the start and then of the array , make a while loop the make sure the end of the array grater then start of the array , swap the start with end , call the function and print the list.
 
-## Whiteboard
 
-![array-reverse](assets/reverse_array.jpg)
+
+![array-reverse](assets/reverse_array1.jpg)
