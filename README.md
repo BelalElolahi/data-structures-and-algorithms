@@ -22,7 +22,7 @@ To run your tests
 ## Table of Contents
 
 #### [Code Challenges](https://github.com/BelalElolahi/data-structures-and-algorithms/tree/main/python/code_challenges)
-   * [array-reverse]()
+   * [array-reverse](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/array-reverse/README.md)
 
 
 #### Tests
