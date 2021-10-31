@@ -18,6 +18,14 @@ To run your tests
 - run `npm test` to run all of the tests
 - run `npm test ##` to only run tests for challenge ## (i.e. 01)
 
-### 401 Data Structures, Code Challenges
+# 401  Data Structures and Algorithms with Python, Code Challenges
+## Table of Contents
 
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+#### [Code Challenges](https://github.com/BelalElolahi/data-structures-and-algorithms/tree/main/python/code_challenges)
+   * [array-reverse]()
+
+
+#### Tests
+* How do you run tests?
+    pytest
+
