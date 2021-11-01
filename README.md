@@ -6,5 +6,8 @@
    * [array-reverse](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/array-reverse/README.md)
 
 
+   * [array-insert-shift](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/array-insert-shift1/README.md)
+
+
 
 
