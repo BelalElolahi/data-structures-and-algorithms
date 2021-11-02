@@ -8,6 +8,8 @@
 
    * [array-insert-shift](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/array-insert-shift/README.md)
 
+   * [binary search](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/array-binary-search/README.md)
+
 
 
 
