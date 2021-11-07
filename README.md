@@ -10,7 +10,7 @@
 
    * [binary search](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/array-binary-search/README.md)
     
-   * [binary search](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/linked_list/README.md) 
+   * [Linked List](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/linked_list/README.md) 
 
 
    
