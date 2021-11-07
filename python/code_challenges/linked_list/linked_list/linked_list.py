@@ -96,7 +96,8 @@ class LinkedList :
     def insert_before(self,value,newValue) :
         newnode = Node(newValue)
         current = self.head
-
+        if not self.include(value) :
+            raise NameError("value not found")
         while current.next != None :
             if current.next.value == value :
                 newnode.next = current.next
@@ -116,7 +117,8 @@ class LinkedList :
                     current.next = node
                     return
                 current = current.next
-
+        else :
+            raise NameError("value not found")
 
 
 
@@ -144,7 +146,7 @@ if __name__=="__main__" :
 
     print("======================================== ")
     ll.insert_after(30,4)
-    ll.insert_before(30,4)
+    ll.insert_before(88,4)
     print(ll)
 
 
