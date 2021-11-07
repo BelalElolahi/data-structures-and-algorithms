@@ -17,6 +17,7 @@ class LinkedList :
         else:
             return False
 
+
     def length(self) :
         count = 0
 
@@ -48,7 +49,7 @@ class LinkedList :
         #check if the Linked list is empty
         # make the head = node
         if self.is_empty() :
-            self.insert_at_first(value)
+            self.insert(value)
             return
 
         # add the value at the end
@@ -67,7 +68,7 @@ class LinkedList :
         count = 0
         current  = self.head
         if index == 0 :
-            self.insert_at_first(value)
+            self.insert(value)
         while current.next != None :
             if count == index - 1:
                 node.next = current.next
@@ -84,6 +85,27 @@ class LinkedList :
                 return True
             current = current.next
          return False
+
+    def insert_after(self,value,newValue) :
+        node = Node(newValue)
+        if self.include(value) :
+            current = self.head
+            while current.next != None :
+                if current.value == value :
+                    node.next = current.next
+                    current.next = node
+                    return
+                current = current.next
+
+
+
+
+
+
+
+
+
+
 
 
     def __str__(self):
@@ -107,8 +129,15 @@ if __name__=="__main__" :
     ll.insert(10)
     print(ll)
     print(ll.length())
+
     print(ll.include(3))
     print(ll.include(20))
     print(ll.include(1))
     print(ll.include(7))
+
+    print("======================================== ")
+    ll.insert_after(30,4)
+    ll.insert_after(10,4)
+    print(ll)
+
 
