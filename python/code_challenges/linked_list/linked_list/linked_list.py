@@ -5,6 +5,7 @@ class Node :
         self.next = None
 
 
+
 class LinkedList :
 
     def __init__(self) -> None:
@@ -17,7 +18,6 @@ class LinkedList :
         else:
             return False
 
-
     def length(self) :
         count = 0
 
@@ -29,6 +29,39 @@ class LinkedList :
             current= current.next
         return count
 
+    def insert_at(self,value,index) :
+        node =Node(value)
+        if self.is_empty() :
+            return
+        count = 0
+        current  = self.head
+        if index == 0 :
+            self.insert(value)
+        while current.next != None :
+            if count == index - 1:
+                node.next = current.next
+                current.next = node
+                return
+            count +=1
+            current = current.next
+        self.append(value)
+
+    # check IF the Value in the LINKED LIST
+    def include (self,value) :
+         current = self.head
+         while current.next != None :
+            if current.value == value :
+                return True
+            current = current.next
+         return False
+
+
+
+
+# Addin Method
+
+
+
     #add element at first of LINKED LIST
     def insert(self,value) :
          node =Node(value)
@@ -39,7 +72,6 @@ class LinkedList :
 
          node.next = self.head
          self.head = node
-
 
 
     # add element at the end of LINKED LIST
@@ -59,33 +91,21 @@ class LinkedList :
             print(current)
         current.next = node
 
-    def insert_at(self,value,index) :
-        node =Node(value)
-        if self.is_empty() :
-            return
 
+     # Add Before Specifice Value
+    def insert_before(self,value,newValue) :
+        newnode = Node(newValue)
+        current = self.head
 
-        count = 0
-        current  = self.head
-        if index == 0 :
-            self.insert(value)
         while current.next != None :
-            if count == index - 1:
-                node.next = current.next
-                current.next = node
+            if current.next.value == value :
+                newnode.next = current.next
+                current.next = newnode
                 return
-            count +=1
             current = current.next
-        self.append(value)
 
-    def include (self,value) :
-         current = self.head
-         while current.next != None :
-            if current.value == value :
-                return True
-            current = current.next
-         return False
 
+     # Add after Specifice Value
     def insert_after(self,value,newValue) :
         node = Node(newValue)
         if self.include(value) :
@@ -99,15 +119,7 @@ class LinkedList :
 
 
 
-
-
-
-
-
-
-
-
-
+    #print Method
     def __str__(self):
         outout= ""
 
@@ -128,16 +140,10 @@ if __name__=="__main__" :
     ll.insert(20)
     ll.insert(10)
     print(ll)
-    print(ll.length())
-
-    print(ll.include(3))
-    print(ll.include(20))
-    print(ll.include(1))
-    print(ll.include(7))
 
     print("======================================== ")
     ll.insert_after(30,4)
-    ll.insert_after(10,4)
+    ll.insert_before(30,4)
     print(ll)
 
 
