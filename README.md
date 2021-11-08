@@ -13,6 +13,9 @@
    * [Linked List](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/linked_list/README.md) 
    
    * [Linked List insertions](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/linked_list/README1.md) 
+   
+   * [Linked List Kth](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/linked_list/README2.md) 
+ 
 
 
 
