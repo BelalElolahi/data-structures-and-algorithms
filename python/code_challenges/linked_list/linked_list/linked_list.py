@@ -121,6 +121,31 @@ class LinkedList :
             raise NameError("value not found")
 
 
+    # return value at index
+
+    #return value form the start
+    def KthFromStart (self,indx) :
+        if indx < 0 or indx >= self.length() :
+            raise NameError("index out of range")
+
+        if self.is_empty() :
+            return
+
+        count = 0
+        current  = self.head
+        while current.next != None :
+            if count == indx :
+                return current.value
+            count +=1
+            current = current.next
+
+
+    #return value form the gevin index
+    def kthFromEnd(self,k) :
+        len = self.length() -1
+        return self.KthFromStart(len - k)
+
+
 
     #print Method
     def __str__(self):
@@ -146,7 +171,14 @@ if __name__=="__main__" :
 
     print("======================================== ")
     ll.insert_after(30,4)
-    ll.insert_before(88,4)
+    ll.insert_before(30,4)
     print(ll)
+    print(ll.length())
+
+
+    print(ll.KthFromStart(5))
+    print(ll.kthFromEnd(5))
+
+
 
 
