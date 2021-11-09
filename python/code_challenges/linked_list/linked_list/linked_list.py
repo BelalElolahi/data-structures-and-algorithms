@@ -1,4 +1,6 @@
 
+
+
 class Node :
     def __init__(self,value):
         self.value = value
@@ -147,8 +149,32 @@ class LinkedList :
 
 
 
+
+     #link two linked lists
+    def zipLists(self, list1, list2):
+        current1 = list1.head
+        current2 = list2.head
+
+        while current1 != None and current2 != None:
+
+            save_curr1_next = current1.next
+            save_curr2_next = current2.next
+
+
+            current1.next = current2
+            current2.next= save_curr1_next
+
+
+            current1 = save_curr1_next
+            current2 = save_curr2_next
+
+
+
+
+
+
     #print Method
-    def __str__(self):
+    def __str__(self) :
         outout= ""
 
         if self.is_empty():
@@ -162,22 +188,32 @@ class LinkedList :
 
 if __name__=="__main__" :
     ll=LinkedList()
+    ll2=LinkedList()
+
     ll.insert(1)
     ll.insert(1)
-    ll.insert(30)
-    ll.insert(20)
-    ll.insert(10)
+    ll.insert(1)
+    ll.insert(1)
+    ll.insert(1)
+
+    ll2.insert(2)
+    ll2.insert(2)
+    ll2.insert(2)
+
+    print("========================")
     print(ll)
 
-    print("======================================== ")
-    ll.insert_after(30,4)
-    ll.insert_before(30,4)
+    print("========================")
+    print(ll2)
+    print("========================")
+    ll.zipLists(ll,ll2)
     print(ll)
-    print(ll.length())
 
 
-    print(ll.KthFromStart(5))
-    print(ll.kthFromEnd(5))
+
+
+
+
 
 
 
