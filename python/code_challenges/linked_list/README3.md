@@ -7,10 +7,9 @@
 + You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
-
+![linked-list-zip](linked_list/assets/linked-list-zip.jpg)
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+### BigO(n)
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
