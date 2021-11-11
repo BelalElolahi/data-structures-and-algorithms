@@ -88,7 +88,7 @@ class LinkedList :
 
         # add the value at the end
         current = self.head
-        while current.next != None :
+        while current.next!= None :
             current = current.next
             print(current)
         current.next = node
@@ -168,6 +168,40 @@ class LinkedList :
             current1 = save_curr1_next
             current2 = save_curr2_next
 
+    def is_palindrome (self,list) :
+        current2=list.head
+        ll2=LinkedList()
+        while current2 != None :
+           ll2.append(current2.value)
+           current2 =current2.next
+        print(ll2)
+
+
+        current = list.head
+        prv = None
+        next = None
+        while current != None :
+            next = current.next
+            current.next= prv
+            prv =current
+            current =next
+        list.head = prv
+        print(list)
+
+        curr1 = list.head
+        curr2 = ll2.head
+        while curr1 != None :
+            if curr1.value != curr2.value:
+                print("hi not")
+                return False
+            curr1 = curr1.next
+            curr2 = curr2.next
+        print("yes it is ")
+        return True
+
+
+
+
 
 
 
@@ -180,34 +214,32 @@ class LinkedList :
         if self.is_empty():
             return f" Head -> Null "
         current = self.head
-        while current.next != None :
+        while current != None :
             outout += f" ""{"" "+str(current.value)+" ""}""  -> "
             current = current.next
         outout += "NULL"
         return outout
+
+
+
 
 if __name__=="__main__" :
     ll=LinkedList()
     ll2=LinkedList()
 
     ll.insert(1)
-    ll.insert(1)
-    ll.insert(1)
-    ll.insert(1)
+    ll.insert(2)
+    ll.insert(3)
+    ll.insert(3)
+    ll.insert(2)
     ll.insert(1)
 
-    ll2.insert(2)
-    ll2.insert(2)
-    ll2.insert(2)
 
     print("========================")
     print(ll)
+    print("========================3")
+    ll.is_palindrome(ll)
 
-    print("========================")
-    print(ll2)
-    print("========================")
-    ll.zipLists(ll,ll2)
-    print(ll)
 
 
 
