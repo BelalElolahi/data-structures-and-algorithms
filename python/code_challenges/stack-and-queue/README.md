@@ -7,13 +7,13 @@
 + Queue is a linear structure which follows a particular order in which the operations are performed. The order is First In First Out (FIFO). A good example of queue is any queue of consumers for a resource where the consumer that came first is served first.
 
 ## Challenge
-## Stacks and Queues
+### Stacks and Queues
 Features
 Using a Linked List as the underlying data storage mechanism, implement both a Stack and a Queue
 
-## Node
+### Node
 Create a Node class that has properties for the value stored in the Node, and a pointer to the next node.
-## Stack
+### Stack
 Create a Stack class that has a top property. It creates an empty Stack when instantiated.
 This object should be aware of a default empty value assigned to top when the stack is created.
 The class should contain the following methods:
@@ -36,7 +36,7 @@ Should raise exception when called on empty stack
 + is empty
 Arguments: none
 Returns: Boolean indicating whether or not the stack is empty.
-## Queue
+### Queue
 Create a Queue class that has a front property. It creates an empty Queue when instantiated.
 This object should be aware of a default empty value assigned to front when the queue is created.
 The class should contain the following methods:
