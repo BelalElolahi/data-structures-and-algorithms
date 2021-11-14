@@ -1,4 +1,7 @@
-from stack_and_queue.node import Node
+class Node:
+    def __init__(self,value) -> None:
+        self.value = value
+        self.next = None
 
 
 
@@ -37,6 +40,37 @@ class Stack :
             return "this is a  Empty Stack"
         else :
           return self.top.value
+
+
+class Pseudo_queue() :
+    def __init__(self) -> None:
+        self.stack = Stack()
+        self.stack2=Stack()
+
+
+    def enqueue(self,value):
+          self.stack.push(value)
+          return self.stack.top.value
+
+
+    def dequeue(self) :
+        current= self.stack.top
+        counter =0
+        while current :
+            self.stack2.push(current.value)
+            current=current.next
+            counter +=1
+
+        for x in range(counter):
+            self.stack.pop()
+        first_rmove = self.stack2.pop()
+
+        return first_rmove
+
+
+
+
+
 
 
 
