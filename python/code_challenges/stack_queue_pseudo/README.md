@@ -13,6 +13,7 @@ Extracts a value from the PseudoQueue, using a first-in, first-out approach.h
 
 
 ## Whiteboard Process
+
 ![](stack_queue_pseudo\assets\pseudo_queue1.jpg)
 ## Approach & Efficiency
 ### enqueue
