@@ -74,6 +74,7 @@ class Pseudo_queue() :
 
         return first_rmove
 
+
     def __str__(self) :
         output = ""
         if self.stack.is_empty():
