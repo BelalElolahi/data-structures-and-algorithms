@@ -10,7 +10,7 @@ Square Brackets : []
 Curly Brackets : {}
 
 ## Whiteboard Process
-[stack-queue-brackets-validate](assets\stack-queue-brackets-validate.jpg)
+![stack-queue-brackets-validate](assets\stack-queue-brackets-validate.jpg)
 
 ## Approach & Efficiency
 o(n)
