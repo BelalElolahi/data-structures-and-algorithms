@@ -65,7 +65,26 @@ class Pseudo_queue() :
             self.stack.pop()
         first_rmove = self.stack2.pop()
 
+        current2 = self.stack2.top
+        while current2 :
+            self.stack.push(current2.value)
+            current2=current2.next
+            counter +=1
+            self.stack2.pop()
+
         return first_rmove
+
+
+    def __str__(self) :
+        output = ""
+        if self.stack.is_empty():
+             return "this is a  Empty Pseudo_queue"
+        current = self.stack.top
+        while current != None :
+             output += f" {current.value}  "
+             current = current.next
+
+        return output
 
 
 
