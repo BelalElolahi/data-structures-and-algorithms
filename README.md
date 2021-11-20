@@ -20,6 +20,7 @@
   * [Stack and Queue](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/stack-and-queue/README.md)
   * [Pseudo Queue](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/stack_queue_pseudo/README.md)
   * [stack-queue-animal-shelter](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/stack_queue_animal_shelter/README.md)
+  * [trees](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/trees/README.md)
  
 
 
