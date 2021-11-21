@@ -5,37 +5,53 @@ class BinaryTree :
         self.root = None
 
 
-    def pre_order (self,root,stack = []) :
+    def pre_order (self,root) :
+        stack = []
+        _root1 = root
 
-        stack.append(root.value)
-        if root.left != None :
-            self.pre_order(root.left,stack)
-        if root.right !=None :
-            self.pre_order(root.right,stack)
-
-        return stack
-
-
-    def in_order(self,root, stack = []):
-        if root.left != None :
-            self.in_order(root.left,stack )
-
-        stack.append(root.value)
-
-        if root.right !=None :
-            self.in_order(root.right , stack)
-
-        return stack
-
-    def post_order (self,root ,stack=[]) :
-
-            if root.left != None :
-                self.post_order(root.left , stack)
-            if root.right != None :
-                self.post_order(root.right , stack)
-            stack.append(root.value)
-
+        def _fun(_root):
+            stack.append(_root.value)
+            if _root.left != None :
+                _fun(_root.left)
+            if _root.right !=None :
+                _fun(_root.right)
             return stack
+
+        return _fun
+
+
+    def in_order(self,root):
+        stack = []
+        _root1 = root
+        def _fun(_root):
+
+            if _root.left != None :
+                _fun(_root.left)
+            stack.append(_root.value)
+
+            if _root.right !=None :
+                _fun(_root.right)
+            return stack
+
+        return _fun
+
+    def post_order (self,root ) :
+
+        stack = []
+        _root1 = root
+        def _fun(_root):
+            if _root.left != None :
+                _fun(_root.left )
+            if root.right != None :
+               _fun(_root.right)
+
+            stack.append(_root.value)
+            return stack
+        return _fun
+
+
+
+
     def is_empty(self):
         return self.root == None
 
