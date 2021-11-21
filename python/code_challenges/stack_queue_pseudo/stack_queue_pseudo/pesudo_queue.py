@@ -64,8 +64,8 @@ class Pseudo_queue() :
         for x in range(counter):
             self.stack.pop()
         first_rmove = self.stack2.pop()
-
         return first_rmove
+
 
 
 

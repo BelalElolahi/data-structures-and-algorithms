@@ -18,12 +18,12 @@ class BinaryTree :
 
     def in_order(self,root, stack = []):
         if root.left != None :
-            self.pre_order(root.left,stack )
+            self.in_order(root.left,stack )
 
         stack.append(root.value)
 
         if root.right !=None :
-            self.pre_order(root.right , stack)
+            self.in_order(root.right , stack)
 
         return stack
 
