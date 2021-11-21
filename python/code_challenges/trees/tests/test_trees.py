@@ -50,7 +50,7 @@ def  test_add_a_left_child_and_right_child_to_a_single_root_node():
 
 def test_return_a_collection_from_a_preorder_traversal(creat_tree):
     excepted = ['A','B','D','C','F','E']
-    actual = creat_tree.pre_order()
+    actual = creat_tree.pre_order(creat_tree.root)
     assert excepted == actual
 
 def test_return_a_collection_from_an_inorder_traversal(creat_tree):

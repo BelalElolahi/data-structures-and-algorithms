@@ -6,9 +6,8 @@ class BinaryTree :
 
 
     def pre_order (self,root) :
+        _root = root
         stack = []
-        _root1 = root
-
         def _fun(_root):
             stack.append(_root.value)
             if _root.left != None :
@@ -16,13 +15,13 @@ class BinaryTree :
             if _root.right !=None :
                 _fun(_root.right)
             return stack
-
-        return _fun
+        _fun(_root)
+        return stack
 
 
     def in_order(self,root):
         stack = []
-        _root1 = root
+        _root = root
         def _fun(_root):
 
             if _root.left != None :
@@ -32,22 +31,23 @@ class BinaryTree :
             if _root.right !=None :
                 _fun(_root.right)
             return stack
+        _fun(_root)
+        return stack
 
-        return _fun
-
-    def post_order (self,root ) :
+    def post_order (self,root) :
 
         stack = []
-        _root1 = root
+        _root = root
         def _fun(_root):
             if _root.left != None :
                 _fun(_root.left )
-            if root.right != None :
+            if _root.right != None :
                _fun(_root.right)
 
             stack.append(_root.value)
             return stack
-        return _fun
+        _fun(_root)
+        return stack
 
 
 
