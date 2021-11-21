@@ -68,21 +68,60 @@ class BinarySearchTree(BinaryTree) :
 
 
 
+
     def contains(self,value):
-        if self.root.value == value:
-            return True
-        else :
-            self._contains(value,self.root)
+        if self.root :
+           contain= self._contains(value,self.root)
+        return contain
 
     def  _contains(self,value,root):
-        if root.value > value :
-            if root.left.value == value :
+        if root.value == value :
                 return True
-            else :
+        elif root.value > value :
                 self._contains(value,root.left)
-        else :
-            if root.right.value == value :
-                return True
-            else :
+        elif root.value < value:
                 self._contains(value,root.right)
+        else :
+            return False
+
+
+
+
+
+    def tree_max(self):
+        if self.root :
+           max=self.getMax(self.root)
+        return max
+    def getMax(self,root):
+        if root.right:
+            return self.getMax(root.right)
+        return root.value
+
+
+
+
+
+
+    """ # MaxValue
+    def tree_max(self) :
+       max = self.root.value
+       max_value= self._tree_max(max,self.root)
+       return max_value
+
+    def _tree_max(self,max,root):
+         if root.left :
+           if root.left.value > max :
+               max = root.left.value
+           else :
+               self._tree_max(max ,root.left)
+
+
+         else :
+            if root.right.value > max :
+               max = root.right.value
+            else :
+               self._tree_max(max ,root.right)
+         return max """
+
+
 
