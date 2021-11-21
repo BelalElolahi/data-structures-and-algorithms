@@ -65,6 +65,22 @@ def test_return_a_collection_from_an_postorder_traversal(creat_tree):
     assert excepted == actual
 
 
+def test_contains():
+    tree1 = BinarySearchTree()
+    tree1.add(10)
+    tree1.add(5)
+    tree1.add(15)
+
+    actual = tree1.contains(10)
+    excepted = True
+    assert actual == excepted
+    pass
+
+
+
+
+
+
 
 
 
