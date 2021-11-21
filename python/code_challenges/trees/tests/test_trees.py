@@ -9,12 +9,12 @@ def test_version():
     assert __version__ == '0.1.0'
 
 """
-    A
-  B   C
-D    F  E
+     A
+  B    C
+D     F  E
 
 pre =['A','B','D','C','F','E']
-in-order = ['B','D','A','C','F','E']
+in-order = ['D', 'B', 'A', 'F', 'C', 'E']
 post = ['D','B','F','E','C','A']
 
 
@@ -54,7 +54,7 @@ def test_return_a_collection_from_a_preorder_traversal(creat_tree):
     assert excepted == actual
 
 def test_return_a_collection_from_an_inorder_traversal(creat_tree):
-    excepted = ['B','D','A','C','F','E']
+    excepted = ['D', 'B', 'A', 'F', 'C', 'E']
     actual = creat_tree.in_order(creat_tree.root)
     assert excepted == actual
 
