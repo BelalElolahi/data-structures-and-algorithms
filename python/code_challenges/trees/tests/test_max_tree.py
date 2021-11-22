@@ -1,6 +1,5 @@
 import pytest
-from trees.node import Node
-from trees.tree import BinarySearchTree, BinaryTree
+from trees.tree import BinarySearchTree
 
 @pytest.fixture
 def creat_tree() :
