@@ -8,7 +8,7 @@ Feature Tasks
 + Return: list of all values in the tree, in the order they were encountered
 
 ## Whiteboard Process
-![](tests\tree_breadth_first.jpg)
+![](assets\tree_breadth_first.jpg)
 ## Approach & Efficiency
 ### Big O
    + O(n)
