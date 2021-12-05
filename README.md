@@ -24,7 +24,7 @@
   * [Max Value BinarySearch trees](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/trees/README1.md)
   * [binaryTree Breadth first](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/trees/README2.md)
   * [Tree-FizzBuzz](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/trees/README3.md)
-  * 
+  * [insertion sort](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/selection_sort/README.md)
  
 
 
