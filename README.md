@@ -19,13 +19,14 @@
   * [Linked List Zip-Lists](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/linked_list/README3.md) 
   * [Stack and Queue](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/stack-and-queue/README.md)
   * [Pseudo Queue](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/stack_queue_pseudo/README.md)
-  * [stack-queue-animal-shelter](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/stack_queue_animal_shelter/README.md)
-  * [trees](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/trees/README.md)
+  * [Stack-queue-animal-shelter](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/stack_queue_animal_shelter/README.md)
+  * [Trees](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/trees/README.md)
   * [Max Value BinarySearch trees](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/trees/README1.md)
-  * [binaryTree Breadth first](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/trees/README2.md)
+  * [BinaryTree Breadth first](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/trees/README2.md)
   * [Tree-FizzBuzz](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/trees/README3.md)
-  * [insertion sort](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/selection_sort/README.md)
-  * [marge sort](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/merge-sort/README.md)
+  * [Insertion sort](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/selection_sort/README.md)
+  * [Marge sort](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/merge-sort/README.md)
+  * [Quick Sort](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/quick-sort/README.md)
  
 
 
