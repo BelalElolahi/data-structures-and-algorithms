@@ -25,13 +25,13 @@ Returns: Index in the collection for that key
 
 ### Time Complexity  :
 + `add() `
- + O(n)
+  + O(n)
 
 + `get()`
-  + O(1)
+   + O(1)
 
 + `contains()`
- + O(1)
+  + O(1)
 
 + `hash()`
   + O(n)
