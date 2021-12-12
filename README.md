@@ -27,7 +27,8 @@
   * [Insertion sort](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/selection_sort/README.md)
   * [Marge sort](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/merge-sort/README.md)
   * [Quick Sort](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/quick-sort/README.md)
-  * [Hash Talbe](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/hashtable/README.md)
+  * [Hash Table](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/hashtable/README.md)
+  * [Repeated Woeds](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/hashmap-repeated-word/README.md)
  
 
 
