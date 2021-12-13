@@ -29,6 +29,7 @@
   * [Quick Sort](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/quick-sort/README.md)
   * [Hash Table](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/hashtable/README.md)
   * [Repeated Woeds](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/hashmap-repeated-word/README.md)
+  * [Tree intersection](https://github.com/BelalElolahi/data-structures-and-algorithms/blob/main/python/code_challenges/tree_intersection/README.md)
  
 
 
