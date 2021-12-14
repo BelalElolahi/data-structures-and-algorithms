@@ -71,3 +71,19 @@ def test_3() :
     expected =[ ['fond', 'enamored', 'averse'] ]
 
     assert expected == actual
+
+
+def test_empty() :
+    first = {
+
+        }
+
+    secoend = {
+
+        }
+
+
+    actual = left_join(first,secoend)
+    expected =[ ]
+
+    assert expected == actual
