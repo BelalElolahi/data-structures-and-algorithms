@@ -31,14 +31,14 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
 ### Time complexity
 
  + add_node(  )
-    + O()
+    + O(1)
 
  + get_node( )
-    + O()
+    + O(n)
  + get_neighbors( )
-      + O()
+      + O(n)
  + size( )
-      + O()
+      + O(1)
 ## API
  ####  `add_node()`
  Add a node to the graph
