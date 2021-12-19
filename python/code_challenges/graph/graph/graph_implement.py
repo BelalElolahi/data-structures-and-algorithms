@@ -1,10 +1,5 @@
-
-class Vertex :
-    def __init__(self,value) :
-        self.value = value
-
-    def __str__(self) -> str:
-        return self.value
+from inspect import FullArgSpec
+from graph.vertex import Vertex
 
 
 class Graph :
@@ -21,6 +16,8 @@ class Graph :
          self.adjacency[node] = []
          self.__length += 1
          return node
+
+
 
 
     def add_edge(self, first_vertex, second_vertex, weight=1):
@@ -57,4 +54,42 @@ class Graph :
            return self.__length
 
        return "Null"
+
+
+
+
+    """
+       Write the following method for the Graph class:
+
+        breadth first
+        Arguments: Node
+        Return: A collection of nodes in the order they were visited.
+        Display the collection
+
+    """
+    def BFS (self,start_vettex):
+        queue = []
+        result = []
+        visited = set()
+
+        queue.append(start_vettex)
+        visited.add(start_vettex)
+        result.append(start_vettex)
+
+        while queue :
+            current_vertex = queue.pop(0)
+            neighbors = self.get_neighbors(current_vertex)
+
+            for neighbor in neighbors :
+                if neighbor not in visited :
+                    queue.append(neighbor)
+                    visited.add(neighbor)
+                    result.append(neighbor)
+
+
+
+        return result
+
+
+
 
