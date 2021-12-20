@@ -1,9 +1,7 @@
-from inspect import FullArgSpec
 from graph.vertex import Vertex
 
 
 class Graph :
-
 
     def __init__(self) -> None:
         self.adjacency= {}
@@ -92,4 +90,17 @@ class Graph :
 
 
 
+    def DFS(self , start_vertex):
+        list = []
+        visited = set()
+
+        def _func( start_vertex):
+            list.append(start_vertex)
+            visited.add(start_vertex)
+            neighbors = self.get_neighbors(start_vertex)
+            for neighbor in neighbors :
+                _func(neighbor)
+
+        _func(start_vertex)
+        return list
 
